@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#28a745" />
+    <title>Einkaufsliste</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer">
+        <h1>Einkaufsliste</h1>
+        <button id="install" hidden>Install</button>
+        <button id="push-button">Enable Push Notifications</button>
+        <button id="push-button2" style="display: none">
+          Disable Push Notifications
+        </button>
+        <form id="shopping-form">
+          <input type="text" id="produkt" placeholder="Produkt" required />
+          <input type="number" id="anzahl" placeholder="Anzahl" required />
+          <button type="submit">Hinzufügen</button>
+        </form>
+      </div>
+    </div>
+    <ul id="shopping-list">
+      <li id="no-products-message">Noch keine Produkte</li>
+    </ul>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
